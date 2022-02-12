@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    height: 10vw;
+    background-color: rgb(3, 3, 24);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.el{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+label{
+    font-size: 3vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+nav ul li{
+    list-style: none;
+}
+.line{
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    margin-bottom: 3px;
+    border-radius: 1px;
+}
+.menu{
+    display: none;
+}
+form#search{
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+#booklist{
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    background-color: pink;
+    margin-bottom: 2vw;
+
+
+}
+#booklist li{
+    border-left: 4px solid green;
+    margin-left: 5vw;
+    margin-bottom: 3vw;
+    padding: 2vw;
+    list-style: none;
+    background-color: white;
+    width: 30%;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#booklist li span{
+    font-size: 1.2vw;
+    display: inline-block;
+    
+}
+#booklist li span.delete{
+    background-color:maroon;
+    padding: 0.2vw;
+    border-radius: 0.7vw;
+    color: white;
+}
+#booklist li span.delete:hover{
+    cursor: pointer;
+    background-color:black;
+    transition: 2s;
+    transform: translate(1%);
+}
+
+h4, form{
+    margin-left: 10%;
+}
+h4{
+    font-size: clamp(1.5vw, 2vw, 3vw);
+    font-weight: lighter;
+}
+form input, button{
+    display: inline-block;
+    padding: 1vw;
+    margin-right: 1vw;
+}
+form input{
+    width: 40%;
+}
+button{
+    width: 10vw;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 4vw;
+    max-height: 6vw;
+    font-size: clamp(1.2vw,1.4vw, 1.7vw);
+}
+
+
+@media screen and (max-width: 500px){
+    nav{
+
+        position: relative;
+        height: 30vw;
+        
+    }
+.show{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    display:block;
+
+    
+    
+    
+}
+
+.el{
+    display:none;
+}
+.menu{
+    display: block;
+}
+.menu:hover{
+
+    cursor: pointer;
+    display: block;
+    
+}
+
+
+
+}
