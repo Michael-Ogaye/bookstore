@@ -36,13 +36,14 @@ var novels=document.querySelector('#booklist');
       deleta.textContent= 'Delete'
       deleta.classList.add('delete');
    })
+   //searching for books
    const searchBar=document.forms['search'].querySelector('input');
    searchBar.addEventListener("keyup", (e)=>{
        e.preventDefault();
        const term= e.target.value.toLowerCase();
        const books=novels.getElementsByTagName('li');
        Array.from(books).forEach((book)=>{
-const title= book.firstElementChild.textContent;
+const title= book.children[0 ].textContent;
 if(title.toLowerCase().indexOf(term)!=-1){
     book.style.display= 'block';
 }

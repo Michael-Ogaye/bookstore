@@ -17,13 +17,14 @@ nav{
     width: 40%;
 }
 label{
-    font-size: 3vw;
+    font-size: clamp(2.5vw, 3vw, 4vw);
 }
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.3vw;
+    font-size:clamp(1.3vw, 1.5vw,1.8vw);
     text-transform: uppercase;
+    font-weight: bold;
 }
 nav ul li{
     list-style: none;
@@ -48,7 +49,8 @@ form#search{
     flex-direction: column;
     
     height: auto;
-    background-color: pink;
+    background-color:#350d29;
+    clip-path: polygon(0 0, 100% 0%, 99% 90%, 0% 100%);
     margin-bottom: 2vw;
 
 
@@ -131,6 +133,10 @@ text-align: center;
         position: relative;
         height: 30vw;
         
+    }
+    input[placeholder]{
+color: green;
+font-size: clamp(1.4vw, 1.8vw, 2vw);
     }
 .show{
     display: flex;
